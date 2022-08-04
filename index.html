@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Flexbox</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+
+<head>
+  <title>Flexbox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
     <div class="login-form">
       <div class="header">
         <div class="icon icon-close"></div>
@@ -15,7 +18,7 @@
 
       <div class="title">
         <h1>Member Sign In</h1>
-        <div>
+        <div class="sign_up">
           Not a member yet? <a href="#">Sign up now</a>
         </div>
       </div>
@@ -44,14 +47,16 @@
       </div>
 
       <div class="actions">
-        <div>
+        <div class="sign">
           <button type="submit">Sign In</button>
         </div>
         <div class="side">
-          <div><input name="remember" type="checkbox" /></div>
+          <div><input name="remember" type="checkbox" />Remember me</div>
           <div><button>Forgot password?</button></div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

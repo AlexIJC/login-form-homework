@@ -1,9 +1,23 @@
+body,
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #181818;
   color: #fafafa;
   margin: 0;
   padding: 30px;
+  background-image: url(./images/Asset\ 4.png);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .icon {
@@ -15,8 +29,9 @@ body {
   cursor: pointer;
   font-size: 28px;
 }
+
 .icon:hover {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
   transform: translate3d(0, 0, 0);
   perspective: 1000px;
 }
@@ -33,25 +48,36 @@ body {
 }
 
 @keyframes shake {
-  10%, 90% {
+
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-  20%, 80% {
+
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
-  30%, 50%, 70% {
+
+  30%,
+  50%,
+  70% {
     transform: translate3d(-2px, 0, 0);
   }
-  40%, 60% {
+
+  40%,
+  60% {
     transform: translate3d(2px, 0, 0);
   }
 }
 
 .login-form {
+
   max-width: 600px;
   margin: 0 auto;
   background-color: #454545;
   padding: 10px;
+  background-color: #E1E1E1;
 }
 
 .login-form .header {
@@ -60,9 +86,10 @@ body {
 }
 
 .icon-close {
-  background-color:coral;
+  background-color: coral;
 }
-.icon-close:after{
+
+.icon-close:after {
   display: inline-block;
   content: "\00d7";
 }
@@ -73,17 +100,42 @@ body {
   flex-direction: column;
 }
 
-.login-form .title > * {
+.login-form .title>* {
   text-align: center;
 }
 
+.title h1 {
+  color: #343844;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.sign_up {
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+
+}
+
+
 .login-form .fields {
+  display: flex;
+  flex-direction: column;
   margin: 50px;
 }
 
 .login-form .field {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.login-form .field:last-child {
+  margin-bottom: 0;
 }
 
 .login-form .field .input {
@@ -92,6 +144,7 @@ body {
   align-items: center;
   background-color: #fff;
 }
+
 .login-form .field input {
   width: 100%;
   background: transparent;
@@ -115,4 +168,38 @@ body {
 .login-form .actions .side {
   display: flex;
   flex-direction: column;
+}
+
+a {
+  margin-left: 10px;
+  color: #fafafa;
+  text-decoration: none;
+  border-bottom: 1px solid #fafafa;
+  padding-bottom: 5px;
+}
+
+.actions {
+  padding-bottom: 20px;
+}
+
+.sign button {
+  background-color: coral;
+  color: #fafafa;
+  width: 120px;
+  height: 40px;
+  border: none;
+}
+
+.side button {
+  background: transparent;
+  border: none;
+}
+
+.side {
+  color: #343844;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+
 }
