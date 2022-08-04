@@ -1,0 +1,118 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #181818;
+  color: #fafafa;
+  margin: 0;
+  padding: 30px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 28px;
+}
+.icon:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-large {
+  font-size: large;
+  width: 48px;
+  height: 48px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+.login-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #454545;
+  padding: 10px;
+}
+
+.login-form .header {
+  display: flex;
+  justify-content: end;
+}
+
+.icon-close {
+  background-color:coral;
+}
+.icon-close:after{
+  display: inline-block;
+  content: "\00d7";
+}
+
+.login-form .title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-form .title > * {
+  text-align: center;
+}
+
+.login-form .fields {
+  margin: 50px;
+}
+
+.login-form .field {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-form .field .input {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.login-form .field input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  margin: 0 20px;
+}
+
+.login-form .field .icon {
+  width: 48px;
+  height: 48px;
+  background: coral;
+}
+
+.login-form .actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+
+.login-form .actions .side {
+  display: flex;
+  flex-direction: column;
+}
